@@ -4,9 +4,9 @@ import java.util.regex.Pattern;
 public class Email {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your email id: ");
-        String email = sc.nextLine();
-        Pattern ptr=Pattern.compile("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+[.][a-zA-Z]+$");
+        //System.out.println("Enter your email id: ");
+        String email = "john.doe43@domainsample.co.uk";
+        Pattern ptr=Pattern.compile("^([a-zA-Z]|[0-9]|[.+_-])+@[a-zA-Z0-9.-]+[.][a-zA-Z]+$");
         Matcher match=ptr.matcher(email);
         boolean check=match.find();
         if(check)
